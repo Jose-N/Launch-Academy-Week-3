@@ -1,23 +1,28 @@
 import React from 'react';
+import ListItem from './ListItem';
 
 const App = props => {
+  let groceryData = [
+    {id: 1, groceryItem: "Oranges"},
+    {id: 2, groceryItem: "Banans"},
+    {id: 3, groceryItem: "Bread"}
+  ]
+
+  let items = groceryData.map(item => {
+    return (
+      < ListItem
+        key={item.id}
+        groceryItem={item.groceryItem}
+      />
+    );
+  });
+
   return(
     <div>
       <h1>Grocery List</h1>
-
+        
       <ul>
-        <li>
-          Oranges
-          <button type="button" onClick={ (event) => { alert('Button was clicked')} }>Delete</button>
-        </li>
-        <li>
-          Bananas
-          <button type="button" onClick={ (event) => { alert('Button was clicked')} }>Delete</button>
-        </li>
-        <li>
-          Bread
-          <button type="button" onClick={ (event) => { alert('Button was clicked')} }>Delete</button>
-        </li>
+        {items}
       </ul>
     </div>
   );

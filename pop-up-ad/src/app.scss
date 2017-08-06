@@ -1,0 +1,38 @@
+/* Your styling here */
+.pink {
+  background-color: #F22FC3;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden;
+}
+.exit {
+  text-align: right;
+  margin: 5px;
+  margin-right: 15px;
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+}
+.yellow {
+  color: #F4CE5A; 
+  text-align: center;
+  font-weight: bold;
+}
+#email {
+  background-color: #F4CE5A;
+  display: inline;
+  float: left;
+  width: 70%;
+  margin-left: 90px;
+  height: 25px;
+}
+#submit {
+  background-color: #12BFBC;
+  color: #F22FC3;
+  border-style: solid;
+  border-color: black;
+  display: inline;
+  float: right;
+  margin-right: 90px;
+}
