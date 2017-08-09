@@ -6,6 +6,6 @@ import InstructionsContainer from './containers/InstructionsContainer';
 
 
 ReactDOM.render(
-  <InstructionsContainer />,
+  <InstructionsContainer  />,
   document.getElementById('app')
 );
