@@ -17,7 +17,7 @@ class App extends Component {
         <div className="row">
           <div className="small-12 small-centered columns text-center">
             <h3>Wanderlust Wishlist</h3>
-            < DestinationContainer />
+            < DestinationContainer data={data} />
           </div>
         </div>
       </div>
