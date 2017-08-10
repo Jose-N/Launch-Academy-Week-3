@@ -12,7 +12,12 @@ class DestinationContainer extends Component {
 
   setSelectedIds(id) {
     let newArray = this.state.selectedIds.slice()
-    newArray.push(id)
+    if (newArray.includes(id)) {
+      let index = newArray.indexOf(id)
+      newArray.splice(index, 1)
+    } else {
+      newArray.push(id)
+    }
     console.log(newArray)
     this.setState({selectedIds: newArray})
   }
